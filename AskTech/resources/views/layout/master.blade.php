@@ -9,7 +9,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
    <!-- site metas -->
-   <title>Casinal</title>
+   <title>Ask Tech</title>
    <meta name="keywords" content="">
    <meta name="description" content="">
    <meta name="author" content="">
@@ -42,41 +42,7 @@
    <div class="header_section">
       <div class="header_bg">
          <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-               <a class="logo" href="index.html"><img src="{{asset('/Casinal/images/logo.png')}}"></a>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                     </li>
-                  </ul>
-                  <div class="call_section">
-                     <ul>
-                        <li><a href="#"><img src="{{asset('/Casinal/images/fb-icon.png')}}"></a></li>
-                        <li><a href="#"><img src="{{asset('/Casinal/images/twitter-icon.png')}}"></a></li>
-                        <li><a href="#"><img src="{{asset('/Casinal/images/linkedin-icon.png')}}"></a></li>
-                        <li><a href="#"><img src="{{asset('/Casinal/images/instagram-icon.png')}}"></a></li>
-                        <div class="donate_bt"><a href="#"><img src="{{asset('/Casinal/images/search-icon.png')}}"></a></div>
-                     </ul>
-                  </div>
-               </div>
-            </nav>
+            @include('partial.nav')
          </div>
       </div>
       <!--banner section start -->
@@ -87,7 +53,7 @@
    <!-- services section start -->
    <div class="services_section layout_padding">
       <div class="container">
-         <h1 class="services_taital"><span style="color: #fcce2d">Our</span> Courses</h1>
+         <h1 class="services_taital"><span style="color: #03989E">Lets</span> Answer ...</h1>
          {{-- <div class="services_section_2">
             <div class="row">
                <div class="col-md-6">
@@ -318,8 +284,9 @@
    <!-- copyright section start -->
    <div class="copyright_section">
       <div class="container">
-         <p class="copyright_text">© 2020 All Rights Reserved. <a href="https://html.design">Free html Templates</a>
-            Distribution <a href="https://themewagon.com">ThemeWagon</a></p>
+         <p class="text-center">@ 2023 Project Laravel SanberCode</p>
+         {{-- <p class="copyright_text">© 2020 All Rights Reserved. <a href="https://html.design">Free html Templates</a>
+            Distribution <a href="https://themewagon.com">ThemeWagon</a></p> --}}
       </div>
    </div>
    <!-- copyright section end -->
