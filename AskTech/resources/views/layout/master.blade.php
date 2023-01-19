@@ -9,7 +9,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
    <!-- site metas -->
-   <title>Casinal</title>
+   <title>Ask Tech</title>
    <meta name="keywords" content="">
    <meta name="description" content="">
    <meta name="author" content="">
@@ -62,6 +62,7 @@
                   </ul>
                </div>
             </nav>
+            @include('partial.nav')
          </div>
       </div>
       <!--banner section start -->
@@ -69,6 +70,245 @@
       <!--banner section end -->
    </div>
    <!--header section end -->
+   <!-- services section start -->
+   <div class="services_section layout_padding">
+      <div class="container">
+         <h1 class="services_taital"><span style="color: #03989E">Lets</span> Answer ...</h1>
+         {{-- <div class="services_section_2">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="image_main">
+                     <img src="{{asset('/Casinal/images/img-2.png')}}" class="image_8" style="width:100%">
+                     <div class="text_main">
+                        <div class="seemore_text">Art And Design</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="image_main">
+                     <img src="{{asset('/Casinal/images/img-3.png')}}" class="image_8" style="width:100%">
+                     <div class="text_main">
+                        <div class="seemore_text">Science</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="image_main">
+                     <img src="{{asset('/Casinal/images/img-4.png')}}" class="image_8" style="width:100%">
+                     <div class="text_main">
+                        <div class="seemore_text">Business Stady</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="image_main">
+                     <img src="{{asset('/Casinal/images/img-5.png')}}" class="image_8" style="width:100%">
+                     <div class="text_main">
+                        <div class="seemore_text">English Speaking</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div> --}}
+      </div>
+   </div>
+   <!-- services section end -->
+   <!-- about section start -->
+   {{-- <div class="news_section layout_padding">
+      <div class="container">
+         <h1 class="news_taital">Our About</h1>
+         <p class="news_text">Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+         <div class="news_section_2">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="news_taital_box">
+                     <p class="date_text">01 Jan 2020</p>
+                     <h4 class="make_text">Make it Simple</h4>
+                     <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation</p>
+                     <p class="post_text">Post By : Casinal</p>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <img src="{{asset('/Casinal/images/img-6.png')}}" class="image_6" style="width:100%">
+                  <h6 class="plus_text">+</h6>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div> --}}
+   <!-- about section end -->
+   <!-- blog section start -->
+   {{-- <div class="blog_section layout_padding">
+      <div class="container">
+         <h1 class="news_taital">Our Bolg</h1>
+         <p class="news_text">do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+         <div class="blog_section_2">
+            <div class="row">
+               <div class="col-md-6">
+                  <img src="{{asset('/Casinal/images/img-7.png')}}" class="image_7" style="width:100%">
+               </div>
+               <div class="col-md-6">
+                  <h4 class="classes_text">Best Classes and study</h4>
+                  <p class="ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                     ullamco laboris </p>
+               </div>
+            </div>
+         </div>
+         <div class="read_bt"><a href="#">Read More</a></div>
+      </div>
+   </div> --}}
+   <!-- blog section end -->
+   <!-- client section start -->
+   {{-- <div class="client_section layout_padding">
+      <div id="main_slider" class="carousel slide" data-ride="carousel">
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <div class="container">
+                  <h1 class="client_taital">Testimonial</h1>
+                  <div class="client_section_2">
+                     <div class="client_left">
+                        <div><img src="{{asset('/Casinal/images/client-img.png')}}" class="client_img"></div>
+                     </div>
+                     <div class="client_right">
+                        <h3 class="client_name">Jony Deno</h3>
+                        <p class="client_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                           exercitation ullamco laboris nisi ut aliquip </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container">
+                  <h1 class="client_taital">Testimonial</h1>
+                  <div class="client_section_2">
+                     <div class="client_left">
+                        <div><img src="{{asset('/Casinal/images/client-img.png')}}" class="client_img"></div>
+                     </div>
+                     <div class="client_right">
+                        <h3 class="client_name">Jony Deno</h3>
+                        <p class="client_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                           exercitation ullamco laboris nisi ut aliquip </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container">
+                  <h1 class="client_taital">Testimonial</h1>
+                  <div class="client_section_2">
+                     <div class="client_left">
+                        <div><img src="{{asset('/Casinal/images/client-img.png')}}" class="client_img"></div>
+                     </div>
+                     <div class="client_right">
+                        <h3 class="client_name">Jony Deno</h3>
+                        <p class="client_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                           exercitation ullamco laboris nisi ut aliquip </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+         </a>
+         <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+            <i class="fa fa-angle-right" style="font-size:24px"></i>
+         </a>
+      </div>
+   </div> --}}
+   <!-- client section end -->
+   <!-- newsletter section start -->
+   {{-- <div class="newsletter_section layout_padding">
+      <div class="container">
+         <div class="newsletter_main">
+            <h1 class="newsletter_taital">Get<br> Your free consuting </h1>
+            <div class="get_quote_bt"><a href="#">Get A Quote</a></div>
+         </div>
+         <p class="dolor_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip </p>
+      </div>
+   </div> --}}
+   <!-- newsletter section end -->
+
+   <!-- contact section start -->
+   {{-- <div class="contact_section layout_padding">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-6 padding_left0">
+               <div class="mail_section">
+                  <div class="contact_img">
+                     <h1 class="contact_taital">Best Educations In World Here</h1>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="map_main"><img src="{{asset('/Casinal/images/map-img.png')}}"></div>
+            </div>
+         </div>
+      </div>
+   </div> --}}
+   <!-- contact section end -->
+   <!-- footer section start -->
+   {{-- <div class="footer_section layout_padding">
+      <div class="container">
+         <div class="subscribe_bt"><a href="#">Subscribe</a></div>
+         <input type="text" class="email_text" placeholder="Enter Your Email" name="Enter Your Email">
+         <div class="footer_section_2">
+            <div class="row">
+               <div class="col-lg-3 margin_top">
+                  <div class="call_text"><a href="#"><img src="{{asset('/Casinal/images/call-icon1.png')}}"><span class="padding_left_15">Call
+                           Now +01 9876543210</span></a></div>
+                  <div class="call_text"><a href="#"><img src="{{asset('/Casinal/images/mail-icon1.png')}}"><span
+                           class="padding_left_15">demo@gmail.com</span></a></div>
+               </div>
+               <div class="col-lg-3">
+                  <div class="information_main">
+                     <h4 class="information_text">Information</h4>
+                     <p class="many_text">There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered alteration</p>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="information_main">
+                     <h4 class="information_text">Helpful Links</h4>
+                     <div class="footer_menu">
+                        <ul>
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="about.html">About</a></li>
+                           <li><a href="services.html">Services</a></li>
+                           <li><a href="blog.html">Blog</a></li>
+                           <li><a href="news.html">News</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3">
+                  <div class="information_main">
+                     <div class="footer_logo"><a href="index.html"><img src="{{asset('/Casinal/images/footer-logo.png')}}"></a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div> --}}
+   <!-- footer section end -->
+   <!-- copyright section start -->
+   <div class="copyright_section">
+      <div class="container">
+         <p class="text-center">@ 2023 Project Laravel SanberCode</p>
+         {{-- <p class="copyright_text">© 2020 All Rights Reserved. <a href="https://html.design">Free html Templates</a>
+            Distribution <a href="https://themewagon.com">ThemeWagon</a></p> --}}
+      </div>
+   </div>
    <!-- copyright section end -->
    <!-- Javascript files-->
    <script src="{{asset('/Casinal/js/jquery.min.js')}}"></script>
