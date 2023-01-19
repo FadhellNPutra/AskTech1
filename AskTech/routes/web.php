@@ -14,11 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 //initial page (about & contact us page)
 Route::get('/', function () {
-    return view('layout.master');
+    return view('partial.initial');
 });
 Route::get('/about', function(){
     return view('page.about');
 });
 Route::get('/contact', function(){
     return view('page.contact');
+});
+// home
+Route::get('/master2', function(){
+    return view('layout.master2');
 });

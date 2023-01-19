@@ -1,3 +1,6 @@
+@extends('layout.master')
+@section('content')
+<br><br><br>
 <div id="my_slider" class="carousel slide" data-ride="carousel">
        <div class="carousel-inner">
           <div class="carousel-item active">
@@ -35,7 +38,7 @@
           </div>
 </div>
 
-   <div class="slider_container">
+<div class="slider_container">
       <div class="item">
         <div class="img-box">
           <img src="{{asset('/Casinal/images/slider-img1.png')}}" alt="" />
@@ -78,11 +81,20 @@
       </div>
    </div>
    <div class="sign_in">
-         <h1 class="services_taital">Login</h1>
+         <h1 class="services_taital">Login</h1><br><br><br><br><br><br><br>
    </div>
- </div>
+</div>
 
 {{-- mulai dari sini --}}
-
+<!-- copyright section start -->
+<div class="copyright_section">
+   <div class="container">
+      <p class="text-center" style="padding: auto; margin:1%;"> @2023 Project Laravel SanberCode</p>
+      {{-- <p class="copyright_text">© 2020 All Rights Reserved. <a href="https://html.design">Free html Templates</a>
+         Distribution <a href="https://themewagon.com">ThemeWagon</a></p> --}}
+   </div>
+</div>
+<!-- copyright section end -->
+@endsection
 
 
