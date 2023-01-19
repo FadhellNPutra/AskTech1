@@ -12,7 +12,14 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//initial page (about & contact us page)
 Route::get('/', function () {
     return view('layout.master');
 });
+Route::get('/about', function(){
+    return view('page.about');
+});
+Route::get('/contact', function(){
+    return view('page.contact');
+});
+

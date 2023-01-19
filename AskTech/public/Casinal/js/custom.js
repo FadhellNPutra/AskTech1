@@ -367,5 +367,49 @@ $(function () {
         interval: 5000
      });
 
+});
 
+// mulai dari sini
+// slick slider
+
+$(".slider_container").slick({
+    autoplay: false,
+    autoplaySpeed: 10000,
+    speed: 600,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    pauseOnHover: true,
+    draggable: true,
+    prevArrow: '<button class="slick-prev"></button>',
+    nextArrow: '<button class="slick-next"></button>',
+    responsive: [{
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 0,
+                slidesToScroll: 0,
+                adaptiveHeight: false,
+            },
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 0,
+                slidesToScroll: 0,
+            },
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 0,
+                slidesToScroll: 0,
+            },
+        },
+        {
+            breakpoint: 420,
+            settings: {
+                slidesToShow: 0,
+                slidesToScroll: 0,
+            },
+        }
+    ]
 });

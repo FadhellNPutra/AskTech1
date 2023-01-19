@@ -234,16 +234,16 @@ button {
 }
 .header_section {
     width: 100%;
-    float: left;
-    background-image: url(../images/banner-bg.png);
-    height: auto;
-    background-size: 100%;
+    float: right;
+    background-color: #bdbdbd;
+    height: 0;
+    background-size: 25%;
     background-repeat: no-repeat;
-    padding-top: 20px;
+    padding-top: 0;
 }
 
 .header_bg{
-    background-color: #e7e7f6;
+    background-color: #f1f1f1;
 }
 .bg-light {
     background-color: transparent !important;
@@ -253,12 +253,14 @@ button {
     padding: 1rem 1rem;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
+.navbar-expand-lg .navbar-nav .nav-item .nav-link {
     padding-right: 10px;
     padding-left: 35px;
     font-size: 18px;
     color: #000;
     text-transform: uppercase;
+    float: right;
+    position: relative;
 }
 
 .navbar-light .navbar-nav .active>.nav-link,
@@ -494,7 +496,7 @@ button {
 }
 
 .image_main:hover .image_8 {
-    opacity: ;
+    opacity:1;
 }
 
 .image_main:hover .text_main {
@@ -1047,4 +1049,5 @@ button {
 .margin_top_90 {
     margin-top: 90px;
 }
+
 

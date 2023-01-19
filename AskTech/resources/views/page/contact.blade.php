@@ -43,31 +43,27 @@
 <body>
    <!--header section start -->
    <div class="header_section">
-      <div class="header_bg">
-         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-light">
-               <a class="logo" href="/"><img src="{{asset('/Casinal/images/logo.png')}}"></a>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto" style="margin-left: 10cm">
-                     <li class="nav-item">
-                        <a class="nav-link" href="/about">About</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="/contact">Contact Us</a>
-                     </li>
-                  </ul>
-               </div>
-            </nav>
-         </div>
-      </div>
-      <!--banner section start -->
-      @include('partial.initial')
-      <!--banner section end -->
-   </div>
+    <div class="header_bg">
+       <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+             <a class="logo" href="/"><img src="{{asset('/Casinal/images/logo.png')}}"></a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto" style="margin-left: 10cm">
+                   <li class="nav-item">
+                      <a class="nav-link" href="/about">About</a>
+                   </li>
+                   <li class="nav-item">
+                      <a class="nav-link" href="/contact">Contact Us</a>
+                   </li>
+                </ul>
+             </div>
+          </nav>
+       </div>
+    </div>
    <!--header section end -->
    <!-- copyright section end -->
    <!-- Javascript files-->
