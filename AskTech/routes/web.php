@@ -26,3 +26,11 @@ Route::get('/contact', function(){
 Route::get('/master2', function(){
     return view('layout.master2');
 });
+// route buat testing
+Route::get('/login', function(){
+    return view('page.login');
+});
+
+Route::get('/register', function(){
+    return view('page.register');
+});

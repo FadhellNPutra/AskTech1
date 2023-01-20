@@ -14,7 +14,8 @@
     <!-- vendor css -->
     <link rel="stylesheet" href="{{asset('/Casinal/css/style.css')}}">
 </head>
-<!-- [ Pre-loader ] start -->
+<body class="">
+    <!-- [ Pre-loader ] start -->
 <div class="loader-bg">
     <div class="loader-track">
         <div class="loader-fill"></div>
@@ -22,15 +23,15 @@
 </div>
 <!-- [ Pre-loader ] End -->
 <!-- [ Header ] start -->
-<header class="navbar pcoded-header navbar-expand-lg navbar-dark header-light">
+    <header class="navbar pcoded-header navbar-expand-lg navbar-dark header-light">
     {{-- logo --}}
-    <div class="m-header">
+        <div class="m-header">
         <a href="/home" class="b-brand">
             <!-- ========   change your logo here   ============ -->
             <img src="{{ asset('Casinal/images/AskTech-logo.png')}}" class="logo">
         </a>
-    </div>
-    <div class="collapse navbar-collapse">
+        </div>
+        <div class="collapse navbar-collapse">
         {{-- search - home btn --}}
         <div>
             box search
@@ -123,9 +124,11 @@
                 </div>
             </li>
         </ul>
-    </div>
-</header>
+        </div>
+    </header>
 <!-- [ Header ] end -->
-<body class="">
-	
+
+    <section>
+        @yield('category')
+    </section> 
 </body>
