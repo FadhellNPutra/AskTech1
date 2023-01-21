@@ -1,4 +1,4 @@
-<div class="copyright_section">
+<div class="copyright_section fixed-bottom">
     <div class="container">
        <p class="text-center" style="padding: auto; margin:1%;"><strong>2023 Project Laravel SanberCode</strong></p>
        {{-- <p class="copyright_text">© 2020 All Rights Reserved. <a href="https://html.design">Free html Templates</a>
