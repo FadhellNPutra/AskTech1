@@ -23,6 +23,6 @@ Route::get('/contact', function(){
     return view('page.contact');
 });
 // home
-Route::get('/master2', function(){
-    return view('layout.master2');
+Route::get('/home', function(){
+    return view('page.home');
 });

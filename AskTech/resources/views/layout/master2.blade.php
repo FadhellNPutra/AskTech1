@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Master 2</title>
+    <title>AskTech</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
@@ -22,40 +22,47 @@
 </div>
 <!-- [ Pre-loader ] End -->
 <!-- [ Header ] start -->
-<header class="navbar pcoded-header navbar-expand-lg navbar-dark header-light">
+<header class="pcoded-header navbar-expand-lg navbar-dark header-light">
     {{-- logo --}}
     <div class="m-header">
         <a href="/home" class="b-brand">
             <!-- ========   change your logo here   ============ -->
             <img src="{{ asset('Casinal/images/AskTech-logo.png')}}" class="logo">
         </a>
+        <b><a class="home" href="/home" style="margin-left: -2">Home</a></b>
     </div>
     <div class="collapse navbar-collapse">
-        {{-- search - home btn --}}
+        {{-- search --}}
         <div>
-            box search
+            <form>
+                <input class="form-control mr-sm-2" type="search" placeholder="Search"  id="keyword" aria-label="Search" style="width: 275%; border-color:#28bebe">
+            </form>
         </div>
         {{-- Notif & profile --}}
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto mr-4">
+            <li>
+                <div>
+                    <a href="/pesan"><img src="{{asset('Casinal/images/mail-icon.png')}}"></i></a>
+                </div>
+            </li>
             <li>
                 <div class="dropdown">
-                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-                        <i class="icon feather icon-bell"></i>
-                        <span class="badge badge-pill badge-danger">5</span>
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="{{asset('Casinal/images/notif.png')}}">
                     </a>
                     <div class="dropdown-menu dropdown-menu-right notification">
-                        <div class="noti-head">
+                        <div class="dropdown-menu">
                             <h6 class="d-inline-block m-b-0">Notifications</h6>
                             <div class="float-right">
                                 <a href="#!" class="m-r-10">mark as read</a>
                                 <a href="#!">clear all</a>
                             </div>
                         </div>
-                        <ul class="noti-body">
+                        <ul class="dropdown-menu">
                             <li class="n-title">
                                 <p class="m-b-0">NEW</p>
                             </li>
-                            <li class="notification">
+                            <li class="dropdown-item">
                                 <div class="media">
                                     <img class="img-radius" src="{{asset('/template/dist/assets/images/user/avatar-1.jpg')}}" alt="Generic placeholder image">
                                     <div class="media-body">
@@ -67,7 +74,7 @@
                             <li class="n-title">
                                 <p class="m-b-0">EARLIER</p>
                             </li>
-                            <li class="notification">
+                            <li class="dropdown-item">
                                 <div class="media">
                                     <img class="img-radius" src="{{asset('/template/dist/assets/images/user/avatar-1.jpg')}}" alt="Generic placeholder image">
                                     <div class="media-body">
@@ -76,7 +83,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="notification">
+                            <li class="dropdown-item">
                                 <div class="media">
                                     <img class="img-radius" src="{{asset('/template/dist/assets/images/user/avatar-1.jpg')}}" alt="Generic placeholder image">
                                     <div class="media-body">
@@ -85,7 +92,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="notification">
+                            <li class="dropdown-item">
                                 <div class="media">
                                     <img class="img-radius" src="{{asset('/template/dist/assets/images/user/avatar-1.jpg')}}" alt="Generic placeholder image">
                                     <div class="media-body">
@@ -103,8 +110,8 @@
             </li>
             <li>
                 <div class="dropdown drp-user">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <i class="feather icon-user"></i>
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="{{asset('Casinal/images/profile.png')}}">
                     </a>
                     <div class="dropdown-menu dropdown-menu-right profile-notification">
                         <div class="pro-head">
