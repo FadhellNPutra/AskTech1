@@ -1,4 +1,5 @@
 @extends('layout.master')
+
 @section('content')
 <br><br><br>
 <div id="my_slider" class="carousel slide" data-ride="carousel">
@@ -82,20 +83,12 @@
    </div>
    <div class="sign_in">
          <h1 class="services_taital">Login</h1><br><br><br><br><br><br><br>
-         <button class="btn btn-primary btn-m" href="/login">Click Here</button>
+         <button class="btn btn-primary btn-m"><a href="/login">Click Here</a></button>
    </div>
 </div>
 
 {{-- mulai dari sini --}}
 <!-- copyright section start -->
-<div class="copyright_section">
-   <div class="container">
-      <p class="text-center" style="padding: auto; margin:1%;"> @2023 Project Laravel SanberCode</p>
-      {{-- <p class="copyright_text">© 2020 All Rights Reserved. <a href="https://html.design">Free html Templates</a>
-         Distribution <a href="https://themewagon.com">ThemeWagon</a></p> --}}
-   </div>
-</div>
+
 <!-- copyright section end -->
 @endsection
-
-

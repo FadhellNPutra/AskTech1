@@ -1,4 +1,4 @@
-<nav>
+{{-- <nav>
     <div class="container">
         <div class="row">
             <div class="col-3"><a href="/">
@@ -16,4 +16,23 @@
             </div>
         </div>
     </div>
+</nav> --}}
+
+<!-- Just an image -->
+<nav class="navbar navbar-light bg-light fixed-top">
+  <div class="row">
+    <div class="col-3">
+      <a href="/"><img src="{{ asset('Casinal/images/AskTech-logo.png')}}" width="150" height= "30"></a>
+    </div>
+    <div class="col-9">
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>

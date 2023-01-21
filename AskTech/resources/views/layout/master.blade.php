@@ -42,13 +42,15 @@
 
 <header>
    <!--header section start -->
-   <div class="header_section">
+   {{-- <div class="header_section">
       <div class="header_bg">
          <div class="container">
             @include('partial.nav')
          </div>
       </div>
-   </div>
+   </div> --}}
+   
+   @include('partial.nav')
    <!--header section end -->
 </header>
 
@@ -56,6 +58,9 @@
    {{-- Body page --}}
    @yield('content')
    {{-- End of body page --}}
+
+   {{-- Footer --}}
+   @include('partial.footer')
    
    <!-- Javascript files-->
    <script src="{{asset('/Casinal/js/jquery.min.js')}}"></script>
