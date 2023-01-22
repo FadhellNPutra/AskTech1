@@ -118,14 +118,24 @@
                 <option value="">China</option>
               </select>
             </div> --}}
-            <div class="form-group">
+            {{-- <div class="form-group">
               <label for="">Country</label>
               <input type="text" class="form-control">
             </div>
             <div class="form-group form-check  text-center">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Agreed with term & conditions</label>
-            </div>
+            </div> --}}
+
+            <select class="custom-select custom-select-lg mb-3">
+              <option value="" selected>--Country--</option>
+              <option value="">Indonesia</option>
+              <option value="">USA</option>
+              <option value="">China</option>
+              {{-- <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option> --}}
+            </select>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
