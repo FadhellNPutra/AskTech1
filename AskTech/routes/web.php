@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\askController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,11 +27,22 @@ Route::get('/contact', function(){
 Route::get('/home', function(){
     return view('page.home');
 });
+
 // route buat testing
 Route::get('/login', function(){
     return view('page.login');
 });
-
 Route::get('/register', function(){
     return view('page.register');
 });
+
+
+//dummy
+
+
+// CRUD ASK
+Route::resource('dummy', askController::class);
+
+// AUTH ROUTE
+Auth::routes();
+

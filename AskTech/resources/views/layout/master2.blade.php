@@ -135,7 +135,6 @@
     </header>
 <!-- [ Header ] end -->
 
-    <section>
         @yield('category')
-    </section> 
+        
 </body>
