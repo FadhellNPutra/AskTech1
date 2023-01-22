@@ -86,7 +86,7 @@
          <div class="col-md-2 my-auto mx-auto">
             <div class="card border bg-transparent">
                <div class="card-body">
-                  <h4 class="text-center">Click Below</h4>
+                  <h4 class="text-center">Click Below...</h4>
                  <button type="button" class="btn btn-primary"><a href="/login">LOGIN</a></button>
                </div>
                </div>
