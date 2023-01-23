@@ -51,20 +51,4 @@
    <br><br><br><br><br><br>
 </div>
 </div>
-
-
-
-
-{{-- <div class="container">
-   <div class="row">
-      <div class="col">
-         <h1>tes123</h1>
-      </div>
-   </div>
-</div> --}}
-
-{{-- mulai dari sini --}}
-<!-- copyright section start -->
-
-<!-- copyright section end -->
 @endsection

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\askController;
 use App\Http\Controllers\profileController;
+use App\Http\Controllers\JawabanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,11 +29,14 @@ Route::get('/contact', function(){
 // home dan
 // Middleware
 Route::group(['middleware' => ['auth']], function(){
-    Route::get('/home', function(){
-        return view('page.home');
+    Route::get('/dummy', function(){
+        return view('page.dummy');
     });
     //profile
     Route::resource('profile', profileController::class)->only(['index','update']);
+
+    // jawaban
+    Route::post('/jawaban/{pertanyaan_id}', [JawabanController::class, 'simpan']);
 
 });
 

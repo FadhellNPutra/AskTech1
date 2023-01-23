@@ -44,7 +44,7 @@
 
         
         <div class="d-flex justify-content-between">
-            <a href="/home" class="btn btn-secondary">Cancel</a>
+            <a href="/dummy" class="btn btn-secondary">Cancel</a>
             <button type="submit" class="btn btn-primary"> Submit</button>
         </div>
     </form>

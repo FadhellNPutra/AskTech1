@@ -27,10 +27,10 @@ class profileController extends Controller
 
         $profile = Profile::find($id);
 
-        $profile->nama = $request->name;
-        $profile->bio = $request->bio;
-        $profile->tanggal_lahir = $request->tanggal_lahir;
-        $profile->alamat = $request->alamat;
+        $profile->nama = $request['name'];
+        $profile->bio = $request['bio'];
+        $profile->tanggal_lahir = $request['tanggal_lahir'];
+        $profile->alamat = $request['alamat'];
 
         $profile->save();
 
