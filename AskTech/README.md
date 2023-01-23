@@ -76,9 +76,9 @@ Daffa Nugraha Ramadhana (@daffaramadhana21)
 Tema Project :
 AskTech
 
-ERD
+ERD : AskTech.png
 
 
 Link Video,
-Link Demo Aplikasi  : 
-Link Deploy         :
+Link Demo Aplikasi  : https://drive.google.com/drive/folders/10VMzn1c8cuO_y7o424N2Pjo96OamjiPZ?usp=sharing
+Link Deploy         : 
