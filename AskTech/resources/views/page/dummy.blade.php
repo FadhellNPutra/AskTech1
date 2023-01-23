@@ -20,7 +20,6 @@
 {{-- Ask --}}
 @section('category')
 <div class="container">
-  {{-- {{ $data }} --}}
     <div class="row">
         <div class="col-3">
             <div class="card">
