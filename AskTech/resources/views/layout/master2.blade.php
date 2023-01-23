@@ -43,7 +43,7 @@
         <ul class="navbar-nav ml-auto mr-4">
             <li>
                 <div>
-                    <a href="/pesan"><img src="{{asset('Casinal/images/mail-icon.png')}}"></i></a>
+                    <a><img src="{{asset('Casinal/images/mail-icon.png')}}"></i></a>
                 </div>
             </li>
             <li>
@@ -63,48 +63,9 @@
                             <li class="n-title">
                                 <p class="m-b-0">NEW</p>
                             </li>
-                            <li class="dropdown-item">
-                                <div class="media">
-                                    <img class="img-radius" src="{{asset('/template/dist/assets/images/user/avatar-1.jpg')}}" alt="Generic placeholder image">
-                                    <div class="media-body">
-                                        <p><strong>John Doe</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>5 min</span></p>
-                                        <p>New ticket Added</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="n-title">
-                                <p class="m-b-0">EARLIER</p>
-                            </li>
-                            <li class="dropdown-item">
-                                <div class="media">
-                                    <img class="img-radius" src="{{asset('/template/dist/assets/images/user/avatar-1.jpg')}}" alt="Generic placeholder image">
-                                    <div class="media-body">
-                                        <p><strong>Joseph William</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>10 min</span></p>
-                                        <p>Prchace New Theme and make payment</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="dropdown-item">
-                                <div class="media">
-                                    <img class="img-radius" src="{{asset('/template/dist/assets/images/user/avatar-1.jpg')}}" alt="Generic placeholder image">
-                                    <div class="media-body">
-                                        <p><strong>Sara Soudein</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>12 min</span></p>
-                                        <p>currently login</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="dropdown-item">
-                                <div class="media">
-                                    <img class="img-radius" src="{{asset('/template/dist/assets/images/user/avatar-1.jpg')}}" alt="Generic placeholder image">
-                                    <div class="media-body">
-                                        <p><strong>Joseph William</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>30 min</span></p>
-                                        <p>Prchace New Theme and make payment</p>
-                                    </div>
-                                </div>
-                            </li>
                         </ul>
-                        <div class="noti-footer">
-                            <a href="#!">show all</a>
+                        <div class="noti-footer" style="background-color: whitesmoke">
+                            <a>There is No Notification</a>
                         </div>
                     </div>
                 </div>
@@ -116,16 +77,17 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-right profile-notification">
                         <div class="pro-head">
-                            <img src="{{asset('/template/dist/assets/images/user/avatar-2.jpg')}}" class="img-radius" alt="User-Profile-Image">
-                            <span>John Doe</span>
-                            <a href="auth-signin.html" class="dud-logout" title="Logout">
-                                <i class="feather icon-log-out"></i>
-                            </a>
+                            <img src="{{asset('/Casinal/images/pict.png')}}" class="img-radius" alt="User-Profile-Image">
+                            <span>{{Auth::user()->name}}</span>
                         </div>
                         <ul class="pro-body">
-                            <li><a href="user-profile.html" class="dropdown-item"><i class="feather icon-user"></i> Profile</a></li>
-                            <li><a href="email_inbox.html" class="dropdown-item"><i class="feather icon-mail"></i> My Messages</a></li>
-                            <li><a href="auth-signin.html" class="dropdown-item"><i class="feather icon-lock"></i> Lock Screen</a></li>
+                            <li><a href="/profile" class="dropdown-item"><i class="nav-icon fas fa-user"></i> Edit Profile</a></li>
+                            <li><a href="{{ route('logout') }}" class="dropdown-item" style="color:crimson; background-color: rgb(255, 180, 180)" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                <i class="feather icon-lock"></i> <b>Log Out</b></a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -137,11 +99,19 @@
 
         @yield('category')
         
-    </section> 
+        
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<<<<<<< HEAD
     @include('sweetalert::alert')
     @stack('scripts')
 </body>
+=======
+@stack('scripts')
+</body>
+<footer>
+@include('partial.footer')
+</footer>
+>>>>>>> c28e289f44ba27ac45752d3f66dcaabc819c4eed

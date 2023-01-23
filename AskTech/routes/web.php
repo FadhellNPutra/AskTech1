@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\askController;
+use App\Http\Controllers\profileController;
+use App\Http\Controllers\JawabanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,21 +25,20 @@ Route::get('/about', function(){
 Route::get('/contact', function(){
     return view('page.contact');
 });
-// home
-Route::get('/home', function(){
-    return view('page.home');
-});
 
-// route buat testing
-Route::get('/login', function(){
-    return view('page.login');
-});
-Route::get('/register', function(){
-    return view('page.register');
-});
+// home dan
+// Middleware
+Route::group(['middleware' => ['auth']], function(){
+    Route::get('/dummy', function(){
+        return view('page.dummy');
+    });
+    //profile
+    Route::resource('profile', profileController::class)->only(['index','update']);
 
+    // jawaban
+    Route::post('/jawaban/{pertanyaan_id}', [JawabanController::class, 'simpan']);
 
-//dummy
+});
 
 
 // CRUD ASK
@@ -46,12 +47,3 @@ Route::resource('dummy', askController::class);
 // AUTH ROUTE
 Auth::routes();
 
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-// app
-Route::get('/app', function(){
-    return view('layouts.app');
-});
