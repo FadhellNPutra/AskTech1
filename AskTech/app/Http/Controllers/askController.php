@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use RealRashid\SweetAlert\Facades\Alert;
 use App\Models\Ask;
 use File;
 
@@ -54,6 +55,9 @@ class askController extends Controller
         $ask->kategori = $request->kategori;
  
         $ask->save();
+
+        Alert::success('Berhasil', 'Berhasil Menambahkan Pertanyaan');
+
 
         return redirect('/dummy');
     
@@ -117,6 +121,10 @@ class askController extends Controller
         $ask->isi_pertanyaan = $request['isi_pertanyaan'];
         $ask->kategori = $request['kategori'];
         $ask->save();
+
+        Alert::success('Berhasil', 'Berhasil Update Pertanyaan');
+
+
         return redirect('/dummy');
     }
 
@@ -134,6 +142,8 @@ class askController extends Controller
         File::delete($path.$ask->foto);
 
         $ask->delete();
+
+        Alert::error('Delete', 'Gambar Dihapus');
 
         return redirect('/dummy');
     }
