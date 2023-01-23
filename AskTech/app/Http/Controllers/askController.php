@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use RealRashid\SweetAlert\Facades\Alert;
 // use Barryvdh\DomPDF\Facade\Pdf;
-use App\Models\Ask;
+use App\Models\ask;
 use File;
 
 class askController extends Controller
@@ -18,7 +18,7 @@ class askController extends Controller
      */
     public function index()
     {
-        $ask = Ask::get();
+        $ask = ask::get();
         return view('page.dummy', ['ask' => $ask]);
     }
 
