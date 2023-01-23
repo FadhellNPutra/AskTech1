@@ -46,3 +46,12 @@ Route::resource('dummy', askController::class);
 // AUTH ROUTE
 Auth::routes();
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// app
+Route::get('/app', function(){
+    return view('layouts.app');
+});

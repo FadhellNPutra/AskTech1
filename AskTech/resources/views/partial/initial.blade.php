@@ -84,10 +84,10 @@
    <div class="container">
       <div class="row">
          <div class="col-md-2 my-auto mx-auto">
-            <div class="card border bg-transparent">
+            <div class="card bg-transparent">
                <div class="card-body">
-                  <h4 class="text-center">Click Below...</h4>
-                 <button type="button" class="btn btn-primary"><a href="/login">LOGIN</a></button>
+                  <h4 class="text-center">Click Below</h4>
+                  <button type="button" class="btn btn-primary ml-2"><a href="/login">LOGIN</a></button>
                </div>
                </div>
              </div>
@@ -96,7 +96,7 @@
    </div>
    {{-- <div class="sign_in">
          <h1 class="services_taital">Login</h1><br><br><br><br><br><br><br>
-         <button class="btn btn-primary btn-m"><a href="/login">Click Here</a></button>
+         <button class="btn btn-primary btn-mt-5"><a href="/login">Click Here</a></button>
    </div> --}}
 </div>
 
