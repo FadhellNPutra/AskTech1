@@ -12,14 +12,13 @@
                         @csrf
 
                         <div class="row mb-3">
-                            <label for="nama" class="col-md-4 col-form-label text-md-end">Nama</label>
+                            <label for="name" class="col-md-4 col-form-label text-md-end">Nama</label>
                             <div class="col-md-6">
-                                <input name="nama" type="text" class="form-control" id="">
-                            </div>
-                            @error('nama')
+                                <input name="name" type="text" class="form-control" id="">
+                                @error('name')
                                 <strong>{{ $message }}</strong>
-                            </span>
                             @enderror
+                            </div>
                         </div>
 
                         <div class="row mb-3">
@@ -61,31 +60,34 @@
                             <label for="tanggal_lahir" class="col-md-4 col-form-label text-md-end">Tanggal Lahir</label>
                             <div class="col-md-6">
                                 <input name="tanggal_lahir" type="date" class="form-control" id="">
-                            </div>
                             @error('tanggal_lahir')
+                            <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
                             @enderror
+                            </div>
                         </div>
                         <div class="row mb-3">
                             <label for="alamat" class="col-md-4 col-form-label text-md-end">Alamat</label>
                             <div class="col-md-6">
                                 <textarea name="alamat" class="form-control" id=""></textarea>
-                            </div>
                             @error('alamat')
+                            <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
                             @enderror
+                            </div>                            
                         </div>
                         <div class="row mb-3">
                             <label for="email" class="col-md-4 col-form-label text-md-end">Biodata</label>
                             <div class="col-md-6">
                                 <textarea name="bio" class="form-control" id=""></textarea>
-                            </div>
                             @error('bio')
+                            <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
                             @enderror
+                            </div>                            
                         </div>
                         
 
