@@ -13,4 +13,9 @@ class profile extends Model
 
      // manipulasi kolom
      protected $fillable = ['nama','bio','alamat','tanggal_lahir','user_id'];
+
+     // One to One (turunan dari user id)
+     public function user(){
+        return $this->belongsTo(User::class, 'user_id');
+     }
 }

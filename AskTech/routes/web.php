@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\askController;
+use App\Http\Controllers\profileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,21 +24,17 @@ Route::get('/about', function(){
 Route::get('/contact', function(){
     return view('page.contact');
 });
-// home
-Route::get('/home', function(){
-    return view('page.home');
-});
 
-// route buat testing
-Route::get('/login', function(){
-    return view('page.login');
-});
-Route::get('/register', function(){
-    return view('page.register');
-});
+// home dan
+// Middleware
+Route::group(['middleware' => ['auth']], function(){
+    Route::get('/home', function(){
+        return view('page.home');
+    });
+    //profile
+    Route::resource('profile', profileController::class)->only(['index','update']);
 
-
-//dummy
+});
 
 
 // CRUD ASK

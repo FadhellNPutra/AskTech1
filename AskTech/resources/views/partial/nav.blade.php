@@ -22,15 +22,18 @@
 <nav class="navbar navbar-light bg-light fixed-top">
   <div class="row">
     <div class="col-3">
-      <a href="/"><img src="{{ asset('Casinal/images/AskTech-logo.png')}}" width="150" height= "30"></a>
+      <a href="/"><img src="{{ asset('Casinal/images/AskTech-logo.png')}}"></a>
     </div>
     <div class="col-9">
-      <ul class="nav justify-content-end">
+      <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link text-dark" href="/about">About</a>
+          <a class="nav-link text-dark" href="/register"><b>Register</b></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="/contact">Contact Us</a>
+          <a class="nav-link text-dark" href="/about"><b>About</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/contact"><b>Contact Us</b></a>
         </li>
       </ul>
     </div>

@@ -12,12 +12,14 @@
                         @csrf
 
                         <div class="row mb-3">
-                            <label for="name" class="col-md-4 col-form-label text-md-end">Nama</label>
+                            <label class="col-md-4 col-form-label text-md-end">Nama</label>
                             <div class="col-md-6">
                                 <input name="name" type="text" class="form-control" id="">
                                 @error('name')
-                                <strong>{{ $message }}</strong>
-                            @enderror
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                         </div>
 
