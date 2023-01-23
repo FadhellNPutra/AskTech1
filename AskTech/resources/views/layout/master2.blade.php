@@ -26,11 +26,11 @@
 <header class="navbar pcoded-header navbar-expand-lg navbar-dark header-light">
     {{-- logo --}}
         <div class="m-header">
-        <a href="/home" class="b-brand">
+        <a href="/dummy" class="b-brand">
             <!-- ========   change your logo here   ============ -->
             <img src="{{ asset('Casinal/images/AskTech-logo.png')}}" class="logo">
         </a>
-        <b><a class="home" href="/home" style="margin-left: -2">Home</a></b>
+        <b><a class="home" href="/dummy" style="margin-left: -2">Home</a></b>
     </div>
     <div class="collapse navbar-collapse">
         {{-- search --}}

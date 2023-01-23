@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use RealRashid\SweetAlert\Facades\Alert;
+use Barryvdh\DomPDF\Facade\Pdf;
 use App\Models\Ask;
 use File;
 
@@ -146,5 +147,11 @@ class askController extends Controller
         Alert::error('Delete', 'Gambar Dihapus');
 
         return redirect('/dummy');
+    }
+
+    public function pdf(){
+        $data = 'Print Jawaban';
+        $pdf = Pdf::loadView('page.dummy', compact('$data'));
+        return $pdf->download('dummy.pdf');
     }
 }

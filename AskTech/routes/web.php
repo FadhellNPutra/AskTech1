@@ -40,6 +40,8 @@ Route::group(['middleware' => ['auth']], function(){
 
 });
 
+// PDF
+Route::get('/dummy', [askController::class, 'pdf']);
 
 // CRUD ASK
 Route::resource('dummy', askController::class);
